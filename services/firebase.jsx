@@ -1,13 +1,12 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-//importar os recursos do firestore
-import {getfirestore} from "firebase/firestore";
+import {getFirestore} from 'firebase/firestore'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyC-3BdnlKfC3FZyuUKXO8qeRKlPw0k3MLU",
+    apiKey: "AIzaSyC-3BdnlKfC3FZyuUKXO8qeRKlPw0k3MLU",
   authDomain: "crud-simples-3a9a8.firebaseapp.com",
   projectId: "crud-simples-3a9a8",
   storageBucket: "crud-simples-3a9a8.appspot.com",
@@ -17,4 +16,4 @@ const firebaseConfig = {
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-export const database = getfirestore(app)
+export const database = getFirestore(app)
